@@ -9,15 +9,22 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
-public class MainActivity extends AppCompatActivity {
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
+public class MainActivity extends AppCompatActivity {
+    /* -------------------------------de------------------------------------*/
     ViewFlipper v_flipper;
     private CardView notif, setting, video, info;
-
+    /* -------------------------------en de------------------------------------*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        AdView adView;
+        adView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
         /* -------------------------------notification------------------------------------*/
         notif = findViewById(R.id.cvnotif);

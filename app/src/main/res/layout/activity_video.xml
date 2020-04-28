@@ -4,6 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Video">
+    tools:context=".Video"
+    android:background="#f2f2f2">
+
+    <com.hidupsehat.healtylife.VideoPlayerRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"
+        android:orientation="vertical">
+    </com.hidupsehat.healtylife.VideoPlayerRecyclerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

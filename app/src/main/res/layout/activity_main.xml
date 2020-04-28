@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:fontFamily="@font/poppins_light"
-            android:text="Begadang Skuy"
+            android:text="HealtyLife"
             android:textColor="#fff"
             android:textSize="20dp" />
     </RelativeLayout>
@@ -47,6 +47,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cvnotif"
         android:layout_width="0dp"
+
         android:layout_height="0dp"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
@@ -57,34 +58,43 @@
         app:cardElevation="10dp"
         android:clickable="true"
         android:foreground="?android:attr/selectableItemBackground">>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/backnof"/>
 
         <LinearLayout
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:layout_margin="16dp"
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+
             <ImageView
-                android:src="@drawable/ic_shortcut_notifications_none"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_width="27dp"
+                android:layout_height="32dp"
+                android:layout_gravity="left|center"
+                android:layout_margin="4dp"
+                android:src="@drawable/ic_shortcut_notifications_none" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
+                android:layout_gravity="center"
                 android:text="Notification"
+
                 android:textColor="#FFB623"
-                android:textSize="18sp"
-                android:textStyle="bold"/>
+                android:textSize="12dp"
+                android:textStyle="bold" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
-    <!-- tester ke 2-->
+    <!-- tester ke 2 -->
     <androidx.cardview.widget.CardView
         android:id="@+id/cvsetting"
         android:layout_width="0dp"
+
         android:layout_height="0dp"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
@@ -95,34 +105,43 @@
         app:cardElevation="10dp"
         android:clickable="true"
         android:foreground="?android:attr/selectableItemBackground">>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/backset"/>
 
         <LinearLayout
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:layout_margin="16dp"
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+
             <ImageView
-                android:src="@drawable/ic_shortcut_settings"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_width="27dp"
+                android:layout_height="32dp"
+                android:layout_gravity="left|center"
+                android:layout_margin="4dp"
+                android:src="@drawable/ic_shortcut_settings" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
+                android:layout_gravity="center"
                 android:text="Setting"
+
                 android:textColor="#FFB623"
-                android:textSize="18sp"
-                android:textStyle="bold"/>
+                android:textSize="12dp"
+                android:textStyle="bold" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
-    <!-- tester ke 3-->
+    <!-- tester ke 3 -->
     <androidx.cardview.widget.CardView
         android:id="@+id/cvvideo"
         android:layout_width="0dp"
+
         android:layout_height="0dp"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
@@ -133,34 +152,43 @@
         app:cardElevation="10dp"
         android:clickable="true"
         android:foreground="?android:attr/selectableItemBackground">>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/backvid"/>
 
         <LinearLayout
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:layout_margin="16dp"
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+
             <ImageView
-                android:src="@drawable/ic_shortcut_videocam"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_width="27dp"
+                android:layout_height="32dp"
+                android:layout_gravity="left|center"
+                android:layout_margin="4dp"
+                android:src="@drawable/ic_shortcut_videocam" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
+                android:layout_gravity="center"
                 android:text="Video"
+
                 android:textColor="#FFB623"
-                android:textSize="18sp"
-                android:textStyle="bold"/>
+                android:textSize="12dp"
+                android:textStyle="bold" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
-    <!-- tester ke 4-->
+    <!-- tester ke 1 -->
     <androidx.cardview.widget.CardView
         android:id="@+id/cvinfo"
         android:layout_width="0dp"
+
         android:layout_height="0dp"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
@@ -171,26 +199,34 @@
         app:cardElevation="10dp"
         android:clickable="true"
         android:foreground="?android:attr/selectableItemBackground">>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/backinf"/>
 
         <LinearLayout
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:layout_margin="16dp"
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+
             <ImageView
-                android:src="@drawable/ic_shortcut_calendar_today"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_width="27dp"
+                android:layout_height="32dp"
+                android:layout_gravity="left|center"
+                android:layout_margin="4dp"
+                android:src="@drawable/ic_shortcut_calendar_today" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
+                android:layout_gravity="center"
                 android:text="Information"
+
                 android:textColor="#FFB623"
-                android:textSize="18sp"
-                android:textStyle="bold"/>
+                android:textSize="12dp"
+                android:textStyle="bold" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
@@ -200,14 +236,17 @@
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="0dp">
-        <TextView
-            android:id="@+id/textGri"
-            android:text="Agung Bambang Sadewo"
-            android:textSize="10dp"
-            android:textColor="#000"
-            android:layout_centerInParent="true"
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-3244273640039222/3406749317"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
     </RelativeLayout>
 
 </LinearLayout>
